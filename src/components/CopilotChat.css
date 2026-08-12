@@ -1,0 +1,138 @@
+.copilot-wrapper {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1050;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.copilot-toggle {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.copilot-toggle:hover {
+  background: #4338ca;
+}
+
+.copilot-panel {
+  width: 320px;
+  height: 24rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.copilot-header {
+  background: #4f46e5;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copilot-header h3 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.copilot-close {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.copilot-close:hover {
+  color: #e0e7ff;
+}
+
+.copilot-messages {
+  flex: 1;
+  padding: 0.75rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+}
+
+.copilot-bubble {
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  max-width: 85%;
+}
+
+.copilot-bubble.user {
+  background: #e0e7ff;
+  color: #312e81;
+  margin-left: auto;
+}
+
+.copilot-bubble.assistant {
+  background: #f3f4f6;
+  color: #1f2937;
+  margin-right: auto;
+}
+
+.copilot-typing {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.copilot-form {
+  padding: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+}
+
+.copilot-input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.copilot-input:focus {
+  border-color: #4f46e5;
+}
+
+.copilot-send {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.copilot-send:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+.copilot-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
